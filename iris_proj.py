@@ -11,18 +11,17 @@ import seaborn as sns
 # read in data from url.
 data = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/71e2436a092d714350de0fc409ca8a8714e7e78f/iris.csv")  
 
-# see all data
+# see all data - showing 150 rows and 5 columns
 print(data)
 
 # all the values of first row will be present
 data.iloc[0]
 
-# first five
+# first five rows
 data.head()
 
 # last five
 data.tail()
-
 
 # Showing the Types of data - floats and objects
 data.dtypes 
@@ -50,3 +49,25 @@ plt.xlabel("X axis")
 plt.ylabel("Y axis")
 plt.title("Histogram of Sepal Length")
 plt.show
+
+
+
+
+```
+
+df= pd.DataFrame(data= np.c_[iris['data'], iris['target']],
+                 columns= iris['feature_names'] + ['target'])
+# select setosa and versicolor
+y = df.iloc[0:100, 4].values
+y = np.where(y == 'Iris-setosa', 0, 1)
+# extract sepal length and petal length
+X = df.iloc[0:100, [0, 2]].values
+# plot data
+plt.scatter(X[:50, 0], X[:50, 1],
+            color='blue', marker='o', label='Setosa')
+plt.scatter(X[50:100, 0], X[50:100, 1],
+            color='green', marker='s', label='Versicolor')
+plt.xlabel('Sepal length [cm]')
+plt.ylabel('Petal length [cm]')
+plt.legend(loc='upper left')
+plt.show()

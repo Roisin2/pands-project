@@ -1,6 +1,7 @@
 # pands-project
             # link [title](https://www.example.com)
-    #Image![alt text](image.jpg)
+    ![Iris Flower](https://www.integratedots.com/wp-content/uploads/2019/06/iris_petal-sepal-e1560211020463.png)
+    
 
 # My Summary of the Iris Data Set
 
