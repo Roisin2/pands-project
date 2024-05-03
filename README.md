@@ -1,14 +1,19 @@
 # pands-project
             # link [title](https://www.example.com)
     #Image![alt text](image.jpg)
-    
+
 # My Summary of the Iris Data Set
 
 The Iris Data Set is quite famous and is a much used data set for teaching and learning.
 This is due to the many options available to look at for analysis, as there are 3 species with 4 attributes each.
-The Iris flowers themselves are the Setosa, Versicolour and Virginica.
+From my reading it seems this data set is held in high regard as being the gold standard for algorithm testing and also machine learning.
+
+The Iris flowers themselves are the Setosa, Versicolour and Virginica. There are 150 samples of the flowers -  with 50 of each species. Then within each Species, are the four attributes which are Petal Length and Width, and Sepal Width and Length. This in my opinion makes for easier tasks for novice learners.
+Ronald Fisher was a statistician and biologist and this data is from a paper released in 1936.
+
 
 ## Getting Started    
+
 Libraries imported are:
 
 numpy: as it is quick to go through large lists(arrays or matrices)
@@ -22,6 +27,7 @@ seaborn:
  
 ### References
 
+https://en.wikipedia.org/wiki/Iris_flower_data_set
 ["geeksforgeeks.org"](https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/)
 
 ["Tutorial point"](https://www.tutorialspoint.com/exploratory-data-analysis-on-iris-dataset)
