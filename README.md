@@ -1,6 +1,12 @@
 # pands-project
             # link [title](https://www.example.com)
     #Image![alt text](image.jpg)
+    
+# My Summary of the Iris Data Set
+
+The Iris Data Set is quite famous and is a much used data set for teaching and learning.
+This is due to the many options available to look at for analysis, as there are 3 species with 4 attributes each.
+The Iris flowers themselves are the Setosa, Versicolour and Virginica.
 
 ## Getting Started    
 Libraries imported are:
