@@ -12,8 +12,9 @@ This is due to the many options available to look at for analysis, as there are 
 From my reading it seems this data set is held in high regard as being the gold standard for algorithm testing and also machine learning.
 
 The Iris flowers themselves are the Setosa, Versicolour and Virginica. There are 150 samples of the flowers -  with 50 of each species. Then within each Species, are the four attributes which are Petal Length and Width, and Sepal Width and Length. This in my opinion makes for easier tasks for novice learners.
-Ronald Fisher was a statistician and biologist and this data is from a paper he released in 1936.
-I read in the [raw data](https://raw.githubusercontent.com/mwaskom/seaborn-data/71e2436a092d714350de0fc409ca8a8714e7e78f/iris.csv) using a url found on Github from a a reliable source, the inventor of sea born.
+
+[Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher) was a statistician and biologist and this data is from a paper he released in 1936.
+I read in the [raw data](https://raw.githubusercontent.com/mwaskom/seaborn-data/71e2436a092d714350de0fc409ca8a8714e7e78f/iris.csv) using a url found on Github from a reliable source, Michael Waskom - the inventor of sea born.
 
 I used [stdout](https://www.geeksforgeeks.org/sys-stdout-write-in-python/)in order to save to ############
 
