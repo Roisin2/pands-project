@@ -15,6 +15,7 @@ The Iris flowers themselves are the Setosa, Versicolour and Virginica. There are
 Ronald Fisher was a statistician and biologist and this data is from a paper he released in 1936.
 I read in the [raw data](https://raw.githubusercontent.com/mwaskom/seaborn-data/71e2436a092d714350de0fc409ca8a8714e7e78f/iris.csv) using a url found on Github from a a reliable source, the inventor of sea born.
 
+I used [stdout](https://www.geeksforgeeks.org/sys-stdout-write-in-python/)in order to save to ############
 
 
 
