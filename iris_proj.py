@@ -1,4 +1,4 @@
-#
+#Analysis.py
 # Author: Roisin Stanley
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,60 +19,138 @@ import seaborn as sns
 # read in data from url.
 data = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/71e2436a092d714350de0fc409ca8a8714e7e78f/iris.csv")  
 
-##### sys.stdout.write(<some string text here>) #https://www.geeksforgeeks.org/sys-stdout-write-in-python/
-from contextlib import redirect_stdout
 
-with open('help.txt', 'w') as f:
-    with redirect_stdout(f):
-        print('it now prints to `help.text`')   ## https://stackoverflow.com/questions/4675728/redirect-stdout-to-a-file-in-python/22434262#22434262
+# Function to summarize the data
+def sum_data(data):
+     try:
+         with open('summary.txt', 'w') as f:
+             for column in data.columns:
+                f.write(f"Summary of {column}:\n")
+                f.write(f"{data[column].describe()}\n\n")
+     except Exception as e:
+         print(f"An error occurred: {e}")
+
+# defining a function sum_data. ( A Function to get summary of data from each column in the data frame and saving it)
+# Try exception block. If an exception happens the code will action inside the except block
+# Opening a file with write mode the with statement makes the file close.
+# In writing to the file – inside the with block, the for loop  runs over each column of the the data
+# For every column the function writes a string “summary of” with the column name and a new line character to the file.
+# It calls then the describe method on the column which gives the descriptive stats like mean, min max etc. 
+# this is then written to the file with two new line characters for spacing.
+# If/when error occurs in the try block the except will catch the exception. Eg if dta object don’t have coloumns attribute 
+# An error message is printed when the exception is caught in the  variable e
+
+
+# Function to plot histograms
+def plot_histograms(data):
+    for column in data.columns:
+        plt.figure()
+        sns.histplot(data[column], kde=True)
+        plt.title(f'Histogram of {column}')
+        plt.savefig(f'{column}_histogram.png')
+        plt.close()
+
+
+#Creating a new figure object in order to plot the histogram. Every column has its own figure.
+#Histplot is called from seaborn and it plots a histogram for data in each column.
+# kde=True argument adds a kernel density estimate plot on to the histogram – a smooth curve that representd the proability density of the data.
+#Setting the title
+#Saving the histogram to a png file named after the column with  “_histogram” added to it
+#Closing the the figure after a save. This is useful for not using too much memory.
+
+
+# Function to plot scatter plots
+def plot_scatter_plots(data):
+    for i, col1 in enumerate(data.columns):
+        for j, col2 in enumerate(data.columns):
+            if i < j:
+                plt.figure()
+                sns.scatterplot(data=data, x=col1, y=col2)
+                plt.title(f'Scatter Plot of {col1} vs {col2}')
+                plt.savefig(f'{col1}_vs_{col2}_scatter.png')
+                plt.close()
+
+#The function takes data, a single argument,a pandas data frame containing data to be plotted.
+#There is a nested loop to irate over all the pairs of columns in the dta frame. The outer loop irates  over the columns and inner loop irates again over the same columns.
+#The condition “i<j” lets only one check on each pair of column
+#For each pair of columns a new scatter plot is created by sns (seaborn) scatterplot function.
+#X axis is for the values in col1 and y axis is for values incol2
+#The title is set to show which columns are being compared
+#The plot is saves as an image file with a filename based om the column names. Coluumn1_vsColumn2_scatterr.png”
+#After saving the plot. A function called plt.close is uded to close the window
+
+
+# Call the functions
+sum_data(data)
+plot_histograms(data)
+plot_scatter_plots(data)
+
+
+
+
+
+
 
 # see all data - showing 150 rows and 5 columns
-print(data)
+#print(data)
 
 # all the values of first row will be present
-print(data.iloc[0])
+#print(data.iloc[0])
 
 # first five rows
-print(data.head())
+#print(data.head())
 
 # last five
-print(data.tail())
+#print(data.tail())
 
 # Showing the Types of data - floats and objects
-print(data.dtypes) 
+#print(data.dtypes) 
 
 # renamed columns 0,1,2,3 and showed every 50th row
-col = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
-data.rename(columns={col[0]:0, col[1]:1, col[2]:2, col[3]:3},inplace=True)
-print(data.iloc[::50])
+#col = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
+#data.rename(columns={col[0]:0, col[1]:1, col[2]:2, col[3]:3},inplace=True)
+#print(data.iloc[::50])
 
 # looking at the columns
-print(data.columns)
+#print(data.columns)
 
 #
-print (data.shape)
-data.describe() # Gives statistical overview
+#print (data.shape)
+#data.describe() # Gives statistical overview
 
 # Showing info from species column eg there is 3 species and 50 of each
-print(data.species.value_counts())
+#print(data.species.value_counts())
 
 # Generate histogram with values from the 1st column[0] # Add Labels and a Legend
-plt.hist(data[0], color = "#BF00BF", edgecolor = "white")
-plt.xlabel("X axis")
-plt.ylabel("Y axis")
-plt.title("Histogram of Sepal Length")
+#plt.hist(data[0], color = "#BF00BF", edgecolor = "white")
+#plt.xlabel("X axis")
+#plt.ylabel("Y axis")
+#plt.title("Histogram of Sepal Length")
 # Add a grid  https://www.w3schools.com/python/matplotlib_grid.asp
-plt.grid(color = 'g', linestyle = '--', linewidth = 0.5 )
-plt.show()
+#plt.grid(color = 'g', linestyle = '--', linewidth = 0.5 )
+#plt.show()
 
 # Generate histogram with values from the 2nd column[1] # Add Labels and a Legend
-plt.hist(data[1], color = "#87CEFA", edgecolor = "white")
-plt.xlabel("X axis")
-plt.ylabel("Y axis")
-plt.title("Histogram of Sepal Width")
+#plt.hist(data[1], color = "#87CEFA", edgecolor = "white")
+#plt.xlabel("X axis")
+#plt.ylabel("Y axis")
+#plt.title("Histogram of Sepal Width")
 # Add a grid  https://www.w3schools.com/python/matplotlib_grid.asp
-plt.grid(color = 'g', linestyle = '--', linewidth = 0.5 )
-plt.show()
+#plt.grid(color = 'g', linestyle = '--', linewidth = 0.5 )
+#plt.show()
+
+### Function to plot histograms
+#def plot_histograms(data):
+ #   for column in data.columns:
+  #      plt.figure()
+   #     sns.histplot(data[column], kde=True)
+    #    plt.title(f'Histogram of {column}')
+     #   plt.savefig(f'{column}_histogram.png')
+       # plt.close()
+      #  plt.show()
+
+
+
 
 
 # ideas for scatter plots needs more thought

@@ -16,7 +16,7 @@ The Iris flowers themselves are the Setosa, Versicolour and Virginica. There are
 [Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher) was a statistician and biologist and this data is from a paper he released in 1936.
 I read in the [raw data](https://raw.githubusercontent.com/mwaskom/seaborn-data/71e2436a092d714350de0fc409ca8a8714e7e78f/iris.csv) using a url found on Github from a reliable source, Michael Waskom - the inventor of sea born.
 
-I used [stdout](https://www.geeksforgeeks.org/sys-stdout-write-in-python/)in order to save to ############
+I used in order to save to 
 
 
 
@@ -29,8 +29,9 @@ numpy: as it is quick to go through large lists(arrays or matrices)
 matplotlib:pyplot makes plots!Anything from scatter plots and histograms and pie charts.
 
 pandas:
+This was used in first function
 
-seaborn:
+seaborn: This is wonderful for making nice visual displays
  
  
 ### References
@@ -39,7 +40,15 @@ seaborn:
 This Raw data taken from Github page belonging to the inventor of Seaborn.
 
 https://en.wikipedia.org/wiki/Iris_flower_data_set
-["geeksforgeeks.org"](https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/)
 
-["Tutorial point"](https://www.tutorialspoint.com/exploratory-data-analysis-on-iris-dataset)
+["geeksforgeeks.org"](https://www.geeksforgeeks.org/
+
+python-basics-of-pandas-using-iris-dataset/)
+
+["Tutorial point"](https://www.tutorialspoint.com/
+
+exploratory-data-analysis-on-iris-dataset)
+
+(https://stackoverflow.com/questions/65569132/python-pandas-error-and-exception-handling)
+
 (https://miro.medium.com/v2/resize:fit:1000/1*nfK3vGZkTa4GrO7yWpcS-Q.png) Iris Image
