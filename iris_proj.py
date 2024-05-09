@@ -70,25 +70,22 @@ def plot_scatter_plots(data):
                 plt.savefig(f'{col1}_vs_{col2}_scatter.png')
                 plt.close()
 
-#The function takes data, a single argument,a pandas data frame containing data to be plotted.
-#There is a nested loop to irate over all the pairs of columns in the dta frame. The outer loop irates  over the columns and inner loop irates again over the same columns.
-#The condition “i<j” lets only one check on each pair of column
-#For each pair of columns a new scatter plot is created by sns (seaborn) scatterplot function.
-#X axis is for the values in col1 and y axis is for values incol2
-#The title is set to show which columns are being compared
-#The plot is saves as an image file with a filename based om the column names. Coluumn1_vsColumn2_scatterr.png”
-#After saving the plot. A function called plt.close is uded to close the window
+# The function takes data, a pandas data frame containing data to be plotted.
+# There is a nested loop to iterate over all the pairs of columns in the df.
+# Outer loop iterates over the columns and inner loop iterates again over the same columns.
+# The condition “i<j” lets only one check on each pair of column.
+# For each pair of col's a new scatter plot is created by sns (seaborn) scatterplot function.
+# X axis is for the values in col1 and y axis is for values in col2.
+# The title is set showing the columns  that are being compared.
+# The plot is saves as an image file with a filename based on the column names.
+# (Column1_vsColumn2_scatter.png”)
+# After saving the plot. A function called plt.close is used to close the window
 
 
 # Call the functions
 sum_data(data)
 plot_histograms(data)
 plot_scatter_plots(data)
-
-
-
-
-
 
 
 # see all data - showing 150 rows and 5 columns
