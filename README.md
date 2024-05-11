@@ -4,7 +4,6 @@
 
  ![Iris Flowers](https://miro.medium.com/v2/resize:fit:1000/1*nfK3vGZkTa4GrO7yWpcS-Q.png)
 
-
 # My Summary of the Iris Data Set
 
 The Iris Data Set is quite famous and is a much used data set for teaching and learning.
@@ -18,7 +17,7 @@ I read in the [raw data](https://raw.githubusercontent.com/mwaskom/seaborn-data/
 
 I used in order to save to 
 
-
+I used [enumerate](https://realpython.com/python-enumerate/)
 
 ## Getting Started    
 
@@ -46,9 +45,10 @@ https://en.wikipedia.org/wiki/Iris_flower_data_set
 python-basics-of-pandas-using-iris-dataset/)
 
 ["Tutorial point"](https://www.tutorialspoint.com/
-
 exploratory-data-analysis-on-iris-dataset)
 
 (https://stackoverflow.com/questions/65569132/python-pandas-error-and-exception-handling)
+
+https://realpython.com/python-enumerate/
 
 (https://miro.medium.com/v2/resize:fit:1000/1*nfK3vGZkTa4GrO7yWpcS-Q.png) Iris Image
