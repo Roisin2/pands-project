@@ -9,11 +9,11 @@ import seaborn as sns
 #(https://raw.githubusercontent.com/mwaskom/seaborn-data/71e2436a092d714350de0fc409ca8a8714e7e78f/iris.csv)
   
 
-#3. Write a program called analysis.py that:
-#1. Outputs a summary of each variable to a single text file,
-#2. Saves a histogram of each variable to png files, and
-#3. Outputs a scatter plot of each pair of variables.
-#4. Performs any other analysis you think is appropriate.
+# A program called analysis.py that:
+# Outputs a summary of each variable to a single text file,
+# Saves a histogram of each variable to png files, and
+# Outputs a scatter plot of each pair of variables.
+# Performs any analysis appropriate.
 
 
 # read in data from url.
@@ -57,7 +57,7 @@ def sum_data(data):
 # For every column the function writes a string “summary of” with the column name and a new line character to the file.
 # It calls then the describe method on the column which gives the descriptive stats like mean, min max etc. 
 # this is then written to the file with two new line characters for spacing.
-# If/when error occurs in the try block the except will catch the exception. Eg if dta object don’t have coloumns attribute 
+# If/when error occurs in the try block the except will catch the exception. Eg if dta object don’t have columns attribute 
 # An error message is printed when the exception is caught in the  variable e
 
 
@@ -167,19 +167,19 @@ def plot_box_and_violin_plots(data):
 
 # ideas for scatter plots needs more thought
 
-df= pd.DataFrame(data= np.c_[iris['data'], iris['target']],
-                 columns= iris['feature_names'] + ['target'])
+#df= pd.DataFrame(data= np.c_[iris['data'], iris['target']],
+                 #columns= iris['feature_names'] + ['target'])
  #select setosa and versicolor
-y = df.iloc[0:100, 4].values
-y = np.where(y == 'Iris-setosa', 0, 1)
+#y = df.iloc[0:100, 4].values
+#y = np.where(y == 'Iris-setosa', 0, 1)
 # extract sepal length and petal length
-X = df.iloc[0:100, [0, 2]].values
+#X = df.iloc[0:100, [0, 2]].values
 #plot data
-plt.scatter(X[:50, 0], X[:50, 1],
-            color='blue', marker='o', label='Setosa')
-plt.scatter(X[50:100, 0], X[50:100, 1],
-            color='green', marker='s', label='Versicolor')
-plt.xlabel('Sepal length [cm]')
-plt.ylabel('Petal length [cm]')
-plt.legend(loc='upper left')
-plt.show()
+#plt.scatter(X[:50, 0], X[:50, 1],
+            #color='blue', marker='o', label='Setosa')
+#plt.scatter(X[50:100, 0], X[50:100, 1],
+            #color='green', marker='s', label='Versicolor')
+#plt.xlabel('Sepal length [cm]')
+#plt.ylabel('Petal length [cm]')
+#plt.legend(loc='upper left')
+#plt.show()
