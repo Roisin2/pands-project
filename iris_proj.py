@@ -103,7 +103,7 @@ def plot_scatter_plots(data):
 # Grid and legend added
 # The plot is saves as an image file with a filename based on the column names.
 # (Column1_vsColumn2_scatter.png”)
-# After saving the plot. A function called plt.close is used to close the window
+# After saving the plot. A function called plt.close is used to close the window.
 
 
 # Call the functions
