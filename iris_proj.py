@@ -50,7 +50,7 @@ def sum_data(data):
      except Exception as e:
          print(f"An error occurred: {e}")
 
-# defining a function sum_data. (A Function to get summary of data from each column in the data frame and saving it)
+# defining a function sum_data.(A Function to get summary of data from each column in the data frame and saving it)
 # Try exception block. If an exception happens the code will action inside the except block
 # Opening a file with write mode, the with statement makes the file close.
 # In writing to the file – inside the with block, the for loop  runs over each column of the the data
