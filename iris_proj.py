@@ -40,7 +40,7 @@ correlation_matrix = data.corr()
 # Print the correlation matrix
 print(correlation_matrix)
 
-# Function to summarize the data
+# Function to summarize the data 
 def sum_data(data):
      try:
          with open('summary.txt', 'w') as f:
@@ -50,15 +50,19 @@ def sum_data(data):
      except Exception as e:
          print(f"An error occurred: {e}")
 
-# defining a function sum_data.(A Function to get summary of data from each column in the data frame and saving it)
-# Try exception block. If an exception happens the code will action inside the except block
+# defining a function sum_data.(Function to get summary of data from each column in the data frame and saving it)
+# Try exception block.If an exception happens the code will action inside the except block
+
 # Opening a file with write mode, the with statement makes the file close.
 # In writing to the file – inside the with block, the for loop  runs over each column of the the data
 # For every column the function writes a string “summary of” with the column name and a new line character to the file.
+
 # It calls then the describe method on the column which gives the descriptive stats like mean, min max etc. 
-# this is then written to the file with two new line characters for spacing.
-# If/when error occurs in the try block the except will catch the exception. Eg if dta object don’t have columns attribute 
-# An error message is printed when the exception is caught in the  variable e
+# This is then written to the file with two new line characters for spacing.
+# If error occurs in the try block, the except will catch the exception. Eg if dta object don’t have columns attribute 
+# An error message is printed when the exception is caught in the variable e
+
+#<https://stackoverflow.com/questions/65569132/python-pandas-error-and-exception-handling>
 
 
 # Function to plot histograms

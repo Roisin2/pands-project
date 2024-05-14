@@ -1,6 +1,8 @@
 # An analysis of the Iris Data Set using Python
 
-            # link [title](https://www.example.com)
+[Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher) was a statistician and biologist and this data is from a paper he released in 1936.
+I read in the [raw data](https://raw.githubusercontent.com/mwaskom/seaborn-data/71e2436a092d714350de0fc409ca8a8714e7e78f/iris.csv) using a url found on Github from a reliable source, Michael Waskom - the inventor of sea born.
+ I found that the data was almost pretreated for me compared to other sources such as [UCI](https://archive.ics.uci.edu/dataset/53/iris )
 
  ![Iris Flowers](https://miro.medium.com/v2/resize:fit:1000/1*nfK3vGZkTa4GrO7yWpcS-Q.png)
 
@@ -12,6 +14,13 @@ From my reading it seems this data set is held in high regard as being the gold 
 
 The Iris flowers themselves are the Setosa, Versicolor and Virginica. There are 150 samples of the flowers -  with 50 of each species.
  Then within each Species, are the four attributes which are Petal Length and Width, and Sepal Width and Length. This in my opinion makes for easier tasks for novice learners.
+
+ *The Purpose of this task was to complete a program called analysis.py that:*
+
+1. Outputs a summary of each variable to a single text file
+2. Saves a histogram of each variable to png files
+3. Outputs a scatter plot of each pair of variables
+4. Performs any analysis appropriate.
 
 [Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher) was a statistician and biologist and this data is from a paper he released in 1936.
 I read in the [raw data](https://raw.githubusercontent.com/mwaskom/seaborn-data/71e2436a092d714350de0fc409ca8a8714e7e78f/iris.csv) using a url found on Github from a reliable source, Michael Waskom - the inventor of sea born.
@@ -87,6 +96,10 @@ exploratory-data-analysis-on-iris-dataset)
 13. <https://www.adventuresinmachinelearning.com/plotting-the-perfect-line-of-best-fit-in-python/>
 
 14. <https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html>
+
+#### Acknowledgements
+
+Lecturers in ATU Andrew Beatty and Ian Mc Loughlin, for lectures through online platform.
 
 #### Getting help
 
