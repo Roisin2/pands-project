@@ -4,7 +4,7 @@
 
  ![Iris Flowers](https://miro.medium.com/v2/resize:fit:1000/1*nfK3vGZkTa4GrO7yWpcS-Q.png)
 
-# My Summary of the Iris Data Set
+## My Summary of the Iris Data Set
 
 The Iris Data Set is quite famous and is a much used data set for teaching and learning.
 This is due to the many options available to look at for analysis, as there are 3 species with 4 attributes each.
@@ -26,7 +26,10 @@ An error message is printed when the exception is caught in the variable "e".
 
 I used [enumerate](https://realpython.com/python-enumerate/)
 
-## Getting Started    
+### Getting Started
+
+The user will need to have Jupyter Notebook Editor for [Visual Studio Code](https://code.visualstudio.com/) in order to clone the repository.
+     The code used is python, so [Anaconda](https://www.anaconda.com/download) is my recommendation as it has so many built in functions such as Pandas, Matplotlib and Numpy and Seaborn.
 
 Libraries imported are:
 
@@ -35,18 +38,17 @@ Libraries imported are:
 [pandas](https://pandas.pydata.org/):This was used in first function
 
 [seaborn](https://seaborn.pydata.org/): This is wonderful for making nice visual displays
- 
+
  [numpy](https://numpy.org/): as it is quick to go through large lists(arrays or matrices)
 
 ### References
 
-(https://raw.githubusercontent.com/mwaskom/seaborn-data/71e2436a092d714350de0fc409ca8a8714e7e78f/iris.csv)
+https://raw.githubusercontent.com/mwaskom/seaborn-data/71e2436a092d714350de0fc409ca8a8714e7e78f/iris.csv
 This Raw data taken from Github page belonging to the inventor of Seaborn.
 
 https://en.wikipedia.org/wiki/Iris_flower_data_set
 
 ["geeksforgeeks.org"](https://www.geeksforgeeks.org/
-
 python-basics-of-pandas-using-iris-dataset/)
 
 ["Tutorial point"](https://www.tutorialspoint.com/
@@ -66,3 +68,20 @@ plotting-the-perfect-line-of-best-fit-in-python/
 https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html
 
 (https://miro.medium.com/v2/resize:fit:1000/1*nfK3vGZkTa4GrO7yWpcS-Q.png) Iris Image
+
+https://www.datacamp.com/tutorial/types-of-data-plots-and-how-to-create-them-in-python
+
+https://www.adventuresinmachinelearning.com/plotting-the-perfect-line-of-best-fit-in-python/
+
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html
+
+#### Getting help
+
+If there is an issue or a query please don't hesitate to submit an issue on git hub.
+
+#### Author
+
+  I study at [ATU](https://www.atu.ie/). I am a mature student returning to education. I have a Bachelors of Business Studies from the former Institute of Technology Sligo - now part of ATU. I find this an interesting subject and hope to continue learning online from the beautiful north west of Ireland. I will be looking for work in the near future and at this moment I will leave my contact as my University Email; G00438900@ATU.ie
+
+  ***
+  #### End
