@@ -22,20 +22,25 @@ The Iris flowers themselves are the Setosa, Versicolor and Virginica. There are 
 3. Outputs a scatter plot of each pair of variables
 4. Performs any analysis appropriate.
 
-[Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher) was a statistician and biologist and this data is from a paper he released in 1936.
-I read in the [raw data](https://raw.githubusercontent.com/mwaskom/seaborn-data/71e2436a092d714350de0fc409ca8a8714e7e78f/iris.csv) using a url found on Github from a reliable source, Michael Waskom - the inventor of sea born.
- I found that the data was almost pretreated for me compared to other sources such as [UCI](https://archive.ics.uci.edu/dataset/53/iris )
-
+ *Task 1*
 The first task required a little research and a lot of trial and error but i think my solution works quiet well.
 
-I used a function called "sum_data" in order to save a summary of all the data from each column in the data frame. Then there is a Try exception block.
- If an exception happens the code will work inside the except block, opening a file with write mode. (The with statement makes the file close.)
+I used a function called "sum_data" in order to save a summary of all the data from each column in the data frame. Then I used a Try exception block.
+If an exception happens the code will work inside the except block, opening a file with write mode. (The with statement makes the file close.)
 In writing to the file – inside the with block, the for loop runs over each column of the the data.
 For every column, the function writes a string “summary of” - with the column name and a new line character to the file.
 It then calls the describe method on the column, which gives the descriptive statistics like mean, min max etc. The results are then written to the file.
 If an error occurs in the try block, the except will catch the exception. Eg if data object doesn't have a columns attribute.
 An error message is printed when the exception is caught in the variable "e".
 
+*Task 2*
+ Creating a new fig object in order to plot the histogram. Every column has its own figure.
+ Histplot is called from seaborn and it plots a histogram for data in each column.
+ kde=True argument adds a kernel density estimate plot on to the histogram – a smooth curve that represents the probability density of the data.
+ I saved the histogram to a png file, named after the column -  with  “_histogram” added.
+ By closing the the figure after a save is useful for not using too much memory.
+
+*Task 3*
 I used [enumerate](https://realpython.com/python-enumerate/)
 
  The function takes data, a pandas data frame containing data to be plotted.
@@ -58,11 +63,12 @@ Libraries imported are:
 
 [matplotlib](https://matplotlib.org/): pyplot makes plots! Anything from scatter plots and histograms and pie charts.
 
-[pandas](https://pandas.pydata.org/):This was used in first function
+[pandas](https://pandas.pydata.org/):This was used alot in my analysis here. Its fast and efficient for data manipulation with tools for reading and writing data between in-memory data structures and different formats like CSV and text files.
 
-[seaborn](https://seaborn.pydata.org/): This is wonderful for making nice visual displays
+[seaborn](https://seaborn.pydata.org/): This is wonderful for making nice visual displays.
+I believe its built on matplotlib.
 
- [numpy](https://numpy.org/): As it is quick to go through large lists(arrays or matrices)
+ [numpy](https://numpy.org/): It is quick to go through large lists (arrays or matrices)
 
 ### References
 
