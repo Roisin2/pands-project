@@ -119,7 +119,7 @@ plot_scatter_plots(data)
 
 
 def plot_box_and_violin_plots(data):
-    sns.set_theme(style="whitegrid")  #Set a grid style
+    sns.set_theme(style="whitegrid")  # Set a grid style
     for feature in ['sepal_length', 'petal_width']:
         plt.figure(figsize=(8, 6))
         sns.boxplot(x='species', y=feature, data=data)

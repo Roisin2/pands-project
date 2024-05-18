@@ -12,6 +12,11 @@ The Iris Data Set is quite famous and is a much used data set for teaching and l
 This is due to the many options available to look at for analysis, as there are 3 species with 4 attributes each.
 From my reading it seems this data set is held in high regard as being the gold standard for algorithm testing and also machine learning.
 
+![Scatter plot of petal width versus species](image.png)
+
+![Scatter plot of Sepal length versus species](image-1.png)
+
+
 The Iris flowers themselves are the Setosa, Versicolor and Virginica. There are 150 samples of the flowers -  with 50 of each species.
  Then within each Species, are the four attributes which are Petal Length and Width, and Sepal Width and Length. This in my opinion makes for easier tasks for novice learners.
 
