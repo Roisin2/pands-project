@@ -12,11 +12,6 @@ The Iris Data Set is quite famous and is a much used data set for teaching and l
 This is due to the many options available to look at for analysis, as there are 3 species with 4 attributes each.
 From my reading it seems this data set is held in high regard as being the gold standard for algorithm testing and also machine learning.
 
-![Scatter plot of petal width versus species](image.png)
-
-![Scatter plot of Sepal length versus species](image-1.png)
-
-
 The Iris flowers themselves are the Setosa, Versicolor and Virginica. There are 150 samples of the flowers -  with 50 of each species.
  Then within each Species, are the four attributes which are Petal Length and Width, and Sepal Width and Length. This in my opinion makes for easier tasks for novice learners.
 
@@ -46,7 +41,7 @@ An error message is printed when the exception is caught in the variable "e".
  By closing the the figure after a save is useful for not using too much memory.
 
 *Task 3*
-I used [enumerate](https://realpython.com/python-enumerate/)
+I used [enumerate](https://realpython.com/python-enumerate/)here.
 
  The function takes data, a pandas data frame containing data to be plotted.
 There is a nested loop to iterate over all the pairs of columns in the df.
@@ -58,6 +53,11 @@ An Outer loop iterates over the columns and inner loop iterates again over the s
  The plot is saves as an image file with a filename based on the column names.
  (Column1_vsColumn2_scatter.png”)
  After saving the plot. A function called plt.close is used to close the window.
+
+*Examples*
+![Scatter plot of petal width versus species](image.png)
+
+![Scatter plot of Sepal length versus species](image-1.png)
 
 ### Getting Started
 
@@ -82,11 +82,9 @@ This Raw data taken from Github page belonging to the inventor of Seaborn.
 
 2. <https://en.wikipedia.org/wiki/Iris_flower_data_set>
 
-3. ["geeksforgeeks.org"](https://www.geeksforgeeks.org/
-python-basics-of-pandas-using-iris-dataset/)
+3. <https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/>
 
-4. ["Tutorial point"](https://www.tutorialspoint.com/
-exploratory-data-analysis-on-iris-dataset)
+4. <https://www.tutorialspoint.com/exploratory-data-analysis-on-iris-dataset>
 
 5. <https://stackoverflow.com/questions/65569132/python-pandas-error-and-exception-handling>
 
@@ -107,6 +105,16 @@ exploratory-data-analysis-on-iris-dataset)
 13. <https://www.adventuresinmachinelearning.com/plotting-the-perfect-line-of-best-fit-in-python/>
 
 14. <https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html>
+
+15. <https://stackoverflow.com/questions/43810708/screenshotting-code-from-visual-studio-code>
+
+#### Other (more experienced!) Peoples take on the data
+
+1. <https://www.kaggle.com/code/abhishekkrg/python-iris-data-visualization-and-explanation>
+
+2. <https://rstudio-pubs-static.s3.amazonaws.com/751627_c46e38ce93da44659a5f4fb753c62dd2.html>
+
+3.<https://medium.com/analytics-vidhya/exploratory-data-analysis-iris-dataset-32d09a52f322>
 
 #### Acknowledgements
 
