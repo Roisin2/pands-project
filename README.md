@@ -15,14 +15,18 @@ From my reading it seems this data set is held in high regard as being the gold 
 The Iris flowers themselves are the Setosa, Versicolor and Virginica. There are 150 samples of the flowers -  with 50 of each species.
  Then within each Species, are the four attributes which are Petal Length and Width, and Sepal Width and Length. This in my opinion makes for easier tasks for novice learners.
 
- *The Purpose of this task was to complete a program called analysis.py that:*
+ From my analysis I can see
+
+ ***The Purpose of this task was to complete a program called analysis.py that:***
 
 1. Outputs a summary of each variable to a single text file
 2. Saves a histogram of each variable to png files
 3. Outputs a scatter plot of each pair of variables
 4. Performs any analysis appropriate.
 
- *Task 1*
+ ***Task 1***
+ ***
+
 The first task required a little research and a lot of trial and error but i think my solution works quiet well.
 
 I used a function called "sum_data" in order to save a summary of all the data from each column in the data frame. Then I used a Try exception block.
@@ -33,16 +37,19 @@ It then calls the describe method on the column, which gives the descriptive sta
 If an error occurs in the try block, the except will catch the exception. Eg if data object doesn't have a columns attribute.
 An error message is printed when the exception is caught in the variable "e".
 
-*Task 2*
+***Task 2***
+***
+
  Creating a new fig object in order to plot the histogram. Every column has its own figure.
  Histplot is called from seaborn and it plots a histogram for data in each column.
  kde=True argument adds a kernel density estimate plot on to the histogram – a smooth curve that represents the probability density of the data.
  I saved the histogram to a png file, named after the column -  with  “_histogram” added.
  By closing the the figure after a save is useful for not using too much memory.
 
-*Task 3*
-I used [enumerate](https://realpython.com/python-enumerate/)here.
+***Task 3***
+***
 
+I used [enumerate](https://realpython.com/python-enumerate/)here.
  The function takes data, a pandas data frame containing data to be plotted.
 There is a nested loop to iterate over all the pairs of columns in the df.
 An Outer loop iterates over the columns and inner loop iterates again over the same columns.
@@ -66,14 +73,15 @@ The user will need to have Jupyter Notebook Editor for [Visual Studio Code](http
 
 Libraries imported are:
 
-[matplotlib](https://matplotlib.org/): pyplot makes plots! Anything from scatter plots and histograms and pie charts.
+[matplotlib](https://matplotlib.org/): Pyplot makes plots! Anything from scatter plots and histograms and pie charts.
 
-[pandas](https://pandas.pydata.org/):This was used alot in my analysis here. Its fast and efficient for data manipulation with tools for reading and writing data between in-memory data structures and different formats like CSV and text files.
+[pandas](https://pandas.pydata.org/): This was used alot in my analysis here. Its fast and efficient for data manipulation with tools for reading and writing data between in-memory data structures and different formats like CSV and text files.
 
 [seaborn](https://seaborn.pydata.org/): This is wonderful for making nice visual displays.
 I believe its built on matplotlib.
 
- [numpy](https://numpy.org/): It is quick to go through large lists (arrays or matrices)
+ *[numpy](https://numpy.org/): It is quick to go through large lists (arrays or matrices)*
+*decided not to use in final work*
 
 ### References
 
@@ -108,7 +116,7 @@ This Raw data taken from Github page belonging to the inventor of Seaborn.
 
 15. <https://stackoverflow.com/questions/43810708/screenshotting-code-from-visual-studio-code>
 
-#### Other (more experienced!) Peoples take on the data
+### Other (more experienced!) peoples take on the data
 
 1. <https://www.kaggle.com/code/abhishekkrg/python-iris-data-visualization-and-explanation>
 
@@ -116,15 +124,15 @@ This Raw data taken from Github page belonging to the inventor of Seaborn.
 
 3.<https://medium.com/analytics-vidhya/exploratory-data-analysis-iris-dataset-32d09a52f322>
 
-#### Acknowledgements
+### Acknowledgements
 
 Lecturers in ATU Andrew Beatty and Ian Mc Loughlin, for lectures through online platform.
 
-#### Getting help
+### Getting help
 
 If there is an issue or a query please don't hesitate to submit an issue on git hub.
 
-#### Author
+### Author
 
   I study at [ATU](https://www.atu.ie/). I am a mature student returning to education. I have a Bachelors of Business Studies from the former Institute of Technology Sligo - now part of ATU. I find this an interesting subject and hope to continue learning online from the beautiful north west of Ireland. I will be looking for work in the near future and at this moment I will leave my contact as my University Email; <G00438900@ATU.ie>
 

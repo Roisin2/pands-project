@@ -69,7 +69,7 @@ def sum_data(data):
 def plot_histograms(data):
     for column in data.columns:
         plt.figure()
-        sns.histplot(data[column], kde=True)
+        sns.histplot(data[column], kde=True, color='Rainbow')
         plt.title(f'Histogram of {column}')
         plt.savefig(f'{column}_histogram.png')
         plt.close()
@@ -133,7 +133,7 @@ def plot_box_and_violin_plots(data):
         plt.close()
         plt.show
 
-
+# same overall but wit more pretty color
 # renamed columns 0,1,2,3 and showed every 50th row
 col = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
 data.rename(columns={col[0]:0, col[1]:1, col[2]:2, col[3]:3},inplace=True)
