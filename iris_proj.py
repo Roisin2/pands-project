@@ -1,6 +1,6 @@
 #Analysis.py
 # Author: Roisin Stanley
-import numpy as np
+#import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
@@ -118,21 +118,21 @@ plot_scatter_plots(data)
 
 # Function for Box plot for sepal length (x-axis) by species (y-axis)
 
-def plot_box_and_violin_plots(data):
-    sns.set_theme(style="whitegrid")  # Set a grid style
-    for feature in ['sepal_length', 'petal_width']:
-        plt.figure(figsize=(8, 6))
-        sns.boxplot(x='species', y=feature, data=data)
-        plt.title(f'Box Plot: {feature} by Species')
-        plt.savefig(f'{feature}_boxplot.png')
-        plt.close()
+#def plot_box_and_violin_plots(data):
+ #   sns.set_theme(style="whitegrid")  # Set a grid style
+  #  for feature in ['sepal_length', 'petal_width']:
+   #     plt.figure(figsize=(8, 6))
+    #    sns.boxplot(x='species', y=feature, data=data)
+     #   plt.title(f'Box Plot: {feature} by Species')
+      #  plt.savefig(f'{feature}_boxplot.png')
+       # plt.close()
 
-        plt.figure(figsize=(8, 6))
-        sns.violinplot(x='species', y=feature, data=data)
-        plt.title(f'Violin Plot: {feature} by Species')
-        plt.savefig(f'{feature}_violinplot.png')
-        plt.close()
-        plt.show
+        #plt.figure(figsize=(8, 6))
+        #sns.violinplot(x='species', y=feature, data=data)
+        #plt.title(f'Violin Plot: {feature} by Species')
+        #plt.savefig(f'{feature}_violinplot.png')
+        #plt.close()
+        #plt.show
 
 
 

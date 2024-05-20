@@ -48,7 +48,9 @@ An error message is printed when the exception is caught in the variable "e".
  I saved the histogram to a png file, named after the column -  with “_histogram” added.
  By closing the the figure after a save is useful for not using too much memory.
 
+ *Examples*
 ![Histogram of petal length](../petal_length_histogram.png)
+
 ![Histogram of petal width](../petal_width_histogram.png)
 
 ***Task 3***
