@@ -69,7 +69,7 @@ def sum_data(data):
 def plot_histograms(data):
     for column in data.columns:
         plt.figure()
-        sns.histplot(data[column], kde=True, color='Rainbow')
+        sns.histplot(data[column], kde=True, color='Rainbow') 
         plt.title(f'Histogram of {column}')
         plt.savefig(f'{column}_histogram.png')
         plt.close()
@@ -90,7 +90,8 @@ def plot_scatter_plots(data):
         for j, col2 in enumerate(data.columns):
             if i < j:
                 plt.figure()
-                sns.scatterplot(data=data, x=col1, y=col2, palette='coolwarm', alpha=0.7)
+                sns.scatterplot(data=data, x=col1, y=col2,alpha=0.7)
+                sns.light_palette('purple')
                 plt.title(f'Scatter Plot of {col1} vs {col2}')
                 plt.grid
                 plt.legend
@@ -133,38 +134,6 @@ def plot_box_and_violin_plots(data):
         plt.close()
         plt.show
 
-# same overall but wit more pretty color
-# renamed columns 0,1,2,3 and showed every 50th row
-col = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
-data.rename(columns={col[0]:0, col[1]:1, col[2]:2, col[3]:3},inplace=True)
-print(data.iloc[::50])
 
-# looking at the columns
-print(data.columns)
-
-#
-print (data.shape)
-data.describe() # Gives statistical overview
-
-# Showing info from species column eg there is 3 species and 50 of each
-print(data.species.value_counts())
-
-# Generate histogram with values from the 1st column[0] # Add Labels and a Legend
-plt.hist(data[0], color = "#BF00BF", edgecolor = "white")
-plt.xlabel("X axis")
-plt.ylabel("Y axis")
-plt.title("Histogram of Sepal Length")
-# Add a grid  https://www.w3schools.com/python/matplotlib_grid.asp
-plt.grid(color = 'g', linestyle = '--', linewidth = 0.5 )
-plt.show()
-
-# Generate histogram with values from the 2nd column[1] # Add Labels and a Legend
-plt.hist(data[1], color = "#87CEFA", edgecolor = "white")
-plt.xlabel("X axis")
-plt.ylabel("Y axis")
-plt.title("Histogram of Sepal Width")
-# Add a grid  https://www.w3schools.com/python/matplotlib_grid.asp
-plt.grid(color = 'g', linestyle = '--', linewidth = 0.5 )
-plt.show()
 
 

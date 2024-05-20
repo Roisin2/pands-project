@@ -15,7 +15,9 @@ From my reading it seems this data set is held in high regard as being the gold 
 The Iris flowers themselves are the Setosa, Versicolor and Virginica. There are 150 samples of the flowers -  with 50 of each species.
  Then within each Species, are the four attributes which are Petal Length and Width, and Sepal Width and Length. This in my opinion makes for easier tasks for novice learners.
 
- From my analysis I can see
+ From my analysis I can see that the setosa is the smallest plant, although it has the widest sepal of all species.
+Comparing by sepal width and length, the versicolor and virginica would be difficult to separate.
+However looking at the petal length and width, and petal and sepal ratios the difference is noticeable, with the virginica being the largest plant.
 
  ***The Purpose of this task was to complete a program called analysis.py that:***
 
@@ -43,8 +45,11 @@ An error message is printed when the exception is caught in the variable "e".
  Creating a new fig object in order to plot the histogram. Every column has its own figure.
  Histplot is called from seaborn and it plots a histogram for data in each column.
  kde=True argument adds a kernel density estimate plot on to the histogram – a smooth curve that represents the probability density of the data.
- I saved the histogram to a png file, named after the column -  with  “_histogram” added.
+ I saved the histogram to a png file, named after the column -  with “_histogram” added.
  By closing the the figure after a save is useful for not using too much memory.
+
+![Histogram of petal length](../petal_length_histogram.png)
+![Histogram of petal width](../petal_width_histogram.png)
 
 ***Task 3***
 ***
@@ -56,7 +61,7 @@ An Outer loop iterates over the columns and inner loop iterates again over the s
  The condition “i< j" lets only one check on each pair of columns. And for each pair of columns, a new scatter plot is created by seaborn's sns scatterplot function.
 
  For the plot, the x axis is for the values in col1, and y axis is for values in col2.
- A title is set showing the columns that are being compared with color and transparency for interest, a grid and legend are also added.
+ A title is set showing the columns that are being compared.
  The plot is saves as an image file with a filename based on the column names.
  (Column1_vsColumn2_scatter.png”)
  After saving the plot. A function called plt.close is used to close the window.
